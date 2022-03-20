@@ -1,55 +1,69 @@
+/*Configuración global*/
 * {
   font-family: Arial, Helvetica, sans-serif;
 }
 
+/*Clase .izquierda: alinea todo el texto a la izquierda.*/
 .izquierda {
   text-align: left;
 }
 
+/*Clase .derecha: alinea todo el texto a la derecha.*/
 .derecha {
   text-align: right;
 }
 
+/*Clase .centrado: alinea todo el texto al centro.*/
 .centrado {
   text-align: center;
 }
 
+/*Clase .justificado: texto justificado.*/
 .justificado {
   text-align: justify;
 }
 
+/*Clase .alReves: escritura de derecha a izquierda invirtiendo la orientación de escritura.*/
 .alReves {
   direction: rtl;
   unicode-bidi: bidi-override;
 }
 
+/*Clase .decoradoOverline: subraya por encima del texto.*/
 .decoradoOverline {
   text-decoration-line: overline;
 }
 
+/*Clase .decoradoLineThrough: subraya en medio del texto.*/
 .decoradoLineThrough {
   text-decoration-line: line-through;
 }
 
+/*Clase .decoradoUnderline: subraya por debajo del texto.*/
 .decoradoUnderline {
   text-decoration-line: underline;
 }
 
+/*Clase .decoradoCombinado: subraya por debajo del texto con puntos de color rojo y de 5px de tamaño.*/
 .decoradoCombinado {
   text-decoration-line: underline;
   text-decoration-color: red;
+  /*Otro estilo es wavy.*/
   text-decoration-style: dotted;
   text-decoration-thickness: 5px;
 }
 
+/*Clase .negritas: coloca todo el texto en negritas.*/
 .negritas {
   font-weight: 700;
 }
 
+/*Clase .ligeras: permite aligerar el peso del texto y hacerlo más "light".*/
 .ligeras {
   font-weight: 100;
 }
 
+/*Clase .link: define propiedades para párrafos, divs, o sections de tipo link.*/
 .link {
   text-decoration: none;
   color: black;
