@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selectores</title>
+
+    <style>
+        /*Escritura en cascada: las declaraciones de estilo posteriores afectarán a las ya escritas. Las buenas prácticas indican que solo se ocupe un bloque
+        para definir el estilo de un solo elemento, no sobreescribir en ellos múltiples veces para evitar código espagueti.*/
+
+        /*Selector universal: afecta a todos los elementos de la página.*/
+        * {
+            font-family: 'Courier New', Courier, monospace;
+        }
+
+        /*Tag body: permite afectar al background de la página.*/
+        body {
+            background-color: aqua;
+        }
+
+
+        /* Por elemento: Todo lo que sea un párrafo les va a aplicar el estilo*/
+        p {
+            color: red;
+            text-align: center;
+        }
+
+        /* Por ID: Todo lo que tenga ID de título se verá afectado*/
+        #titulo {
+            color: blue;
+            text-align: right;
+        }
+
+        /* Por clase: afecta a todo lo que sea clase "izquierda". Opción más empleada.*/
+        .izquierda {
+            color: green;
+            text-align: left;
+            /*La alineación a la izquierda es la alineación por defecto.*/
+        }
+
+        /* Por tipo y clase: afecta a todo lo que sea clase "izquierda" y sea del tipo indicado. */
+        p.izquierda {
+            text-decoration: underline;
+            text-align: left;
+            /*Ese text align sobreescribe al del bloque inicial.*/
+        }
+
+        .contraste {
+            background-color: black;
+        }
+
+        /*Agrupación de estilos para elementos de texto distintos de HTML con elementos de estilo en común.*/
+        h1,
+        h2,
+        p {
+            font-weight: bold;
+        }
+    </style>
+
+
+</head>
+
+<body>
+    <h1>Header simple</h1>
+    <!--Tag de ID al párrafo h2 -->
+    <h2 id="titulo">Header con id Titulo</h2>
+    <p>Párrafo simple</p>
+
+    <!--Tags de clases a párrafos -->
+    <h3 class="izquierda">Prueba clase Header 3</h3>
+    <p class="izquierda">Prueba clase parrafo</p>
+    <!--Uso de múltiples clases a un mismo párrafo -->
+    <p class="izquierda contraste">Prueba múltiples clases parrafo</p>
+</body>
+
+</html>

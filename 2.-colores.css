@@ -1,0 +1,34 @@
+/*Selector general.*/
+* {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/*Selector para párrafos.*/
+p {
+  font-size: 20px;
+}
+
+/*Selector para la clase "colorRojo".*/
+.colorRojo {
+  color: red;
+}
+
+/*Selector para la clase "colorRGB.*/
+.colorRGB {
+  color: rgb(93, 172, 210);
+}
+
+/*Selector para la clase "colorRGBA". Alpha indica nivel de opacidad.*/
+.colorRGBA {
+  color: rgba(214, 162, 93, 0.9);
+}
+
+/*Selector para la clase "colorHex".*/
+.colorHex {
+  color: #ee43a1;
+}
+
+/*Selector para la clase "colorHSL".*/
+.colorHSL {
+  color: hsl(30, 68%, 30%);
+}

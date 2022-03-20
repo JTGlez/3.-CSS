@@ -1,0 +1,71 @@
+/*Selector general*/
+* {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/*Elementos section de HTML*/
+section {
+  height: 400px;
+}
+
+/*Elementos div* de HTML*/
+div {
+  height: 400px;
+}
+
+/*Clase fondoColor*/
+.fondoColor {
+  /*Background color rodeará a los elementos de esta clase con un fondo
+  del color especificado.*/
+  background-color: #0f6666;
+}
+
+/*Clase fondoOpacidad. Opacity solo aplica al color especificado. */
+.fondoOpacidad {
+  background-color: #5d0c0c;
+  opacity: 0.6;
+}
+
+/*Clase fondoImagen*/
+.fondoImagen {
+  background-image: url("../images/fondo1.jpg");
+}
+
+/*Clase fondoRepetidoX*/
+.fondoRepetidoX {
+  background-image: url("../images/fondo2.jpg");
+  /*Pemite que el fondo se repite forma horizontal.*/
+  background-repeat: repeat-x;
+}
+
+/*Clase fondoRepetidoY*/
+.fondoRepetidoY {
+  background-image: url("../images/fondo1.jpg");
+  /*Pemite que el fondo se repite forma vertical.*/
+  background-repeat: repeat-y;
+}
+
+/*Clase fondoNoRepetido*/
+.fondoNoRepetido {
+  background-image: url("../images/fondo2.jpg");
+  /*Pemite que el fondo no se repita.*/
+  background-repeat: no-repeat;
+}
+
+/*Clase fondoPosicion*/
+.fondoPosicion {
+  background-image: url("../images/fondo1.jpg");
+  background-repeat: no-repeat;
+  /*Indica donde se iniciará la carga de la imagen*/
+  background-position: bottom right;
+}
+
+/*Clase fondoCompleto*/
+.fondoCompleto {
+  background-image: url("../images/fondo2.jpg");
+  background-repeat: no-repeat;
+  /*Ubica al centro la posición de la imagen de background.*/
+  background-position: center;
+  /*Hace que la imagen se ajuste para cubrir todo el fondo de la página.*/
+  background-size: cover;
+}
